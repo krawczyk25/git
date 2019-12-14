@@ -25,8 +25,9 @@ public class StreamExample {
 
         strings.stream()
                 .filter(s -> {
-                    Log.info("testing object [{}]", s);
-                 return s.length()>=4;
+                    boolean test = s.length()>=4;
+                    Log.info("testing object [{}], passed ? [{}]", s, test);
+                 return test;
                 })
                 .map(s -> {
                     Log.info("mapping object [{}]", s);
