@@ -26,16 +26,15 @@ public class StreamExample {
         //
         strings.stream()
                 .filter(s -> {
-                    boolean test = s.length()>=4;
-                    Log.info("testing object [{}], passed ? [{}]", s, test);
-                 return test;
+                    Log.info("testing object [{}], passed ? [{}]", s, s.length()>=4);
+                 return s.length()>=4;
                 })
                 .map(s -> {
                     Log.info("mapping object [{}]", s);
                     return s.length();
-                })
-               .collect(Collectors.toList())
-        .forEach(integer -> System.out.println("number: [" + integer + "]"));
+                });
+               // .collect(Collectors.toList());
+        //.forEach(integer -> System.out.println("number: "+ integer));
 
     }
 }
