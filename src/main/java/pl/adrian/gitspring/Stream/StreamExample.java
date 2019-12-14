@@ -23,6 +23,7 @@ public class StreamExample {
                 "pink"
         );
 
+        //
         strings.stream()
                 .filter(s -> {
                     boolean test = s.length()>=4;
