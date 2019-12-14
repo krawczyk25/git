@@ -7,7 +7,7 @@ import pl.adrian.gitspring.Person;
 @RestController
 public class Controller {
 
-    @GetMapping("/Controller")
+    @GetMapping("/name")
     public Person getPerson(){
         return new Person("Adrian","Krawczyk",22);
     }
