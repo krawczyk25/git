@@ -11,4 +11,11 @@ public class Controller {
     public Person getPerson(){
         return new Person("Adrian","Krawczyk",22);
     }
+
+    @GetMapping("/wiek")
+    Integer getWiek(){
+        final int i = 22;
+        return i;
+    }
+
 }
