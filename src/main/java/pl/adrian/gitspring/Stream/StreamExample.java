@@ -22,7 +22,7 @@ public class StreamExample {
                 "red",
                 "pink"
         );
-
+////
 
         strings.stream()
                 .filter(s -> {
